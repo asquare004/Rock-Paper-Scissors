@@ -1,0 +1,68 @@
+/* Same as before, with enhancements for a good UX */
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 200px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.choices button {
+  font-size: 1.2rem;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
